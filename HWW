@@ -1,0 +1,13 @@
+import turtle   #inporting librari
+turtle.Screen().bgcolor("green")
+turtle.Screen().setup(3000,480)
+polygon = turtle.Turtle() #denified variable
+
+num_sides = 9 #variable
+side_length = 90
+angel = 360.0 / num_sides
+#itirate loop for total number of sides
+for i in range(num_sides):
+    polygon.forward(side_length)
+    polygon.right(angel)
+turtle.done()
